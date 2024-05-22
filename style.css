@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    margin: auto 30px;
+    font-style: normal;
+}
+
+h1 {
+    color: hsl(187, 24%, 22%);
+}
+
+label {
+    color: hsl(186, 15%, 59%);
+}
+
+#form_div {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.label_div {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox_div,
+.footer_div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+.checkbox_div div{
+    width: 100%;
+}
+
+.name_div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.name_div .section{
+    width: 100%;
+}
+
+.footer_div{
+    flex-direction: row;
+}
+
+.checkbox_div div {
+    display: flex;
+    padding-left: 0.5em;
+    border: solid 1px gray;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.checkbox_div label{
+    color: black;
+}
+
+span {
+    color: lightblue;
+    position: relative;
+    left: 10px;
+}
+
+.req_para {
+    text-align: left;
+    color: red;
+}
+
+.inp {
+    width: auto;
+    height: 2em;
+    outline: none;
+    border: solid grey 1px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#message_inp {
+    height: 150px;
+    width: auto;
+    outline: none;
+    border: solid grey 1px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 20px;
+    background-color:rgb(26, 136, 26);
+    color: white;
+    border-radius: 10px;
+}

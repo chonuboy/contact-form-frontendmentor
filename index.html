@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Contact Us</h1>
+
+  <div id="form_div">
+    <form action="">
+      <div class="main_div">
+        
+        <div class="name_div">
+          
+          <div class="section">
+            <div class="label_div">
+              <label for="fname">First Name</label><span>*</span>
+            </div>
+            <input type="text" id="fname" required class="inp">
+            <p class="req_para">please Enter FirstName</p>
+          </div>
+
+          <div class="section">
+            <div class="label_div">
+              <label for="lname">Last Name</label><span>*</span>
+            </div>
+            <input type="text" id="lname" required class="inp">
+            <p class="req_para">Please Enter Last Name</p>
+          </div>
+        
+        </div>
+        
+        <div class="section">
+          <div class="label_div">
+            <label for="mail">Email Address</label><span>*</span>
+          </div>
+          <input type="email" id="mail" required class="inp">
+          <p class="req_para">Please enter a valid email address</p>
+        </div>
+
+        <div class="section">
+          <div class="label_div">
+            <label for="query">Query Type</label><span>*</span><br><br>
+          </div>
+          <div class="checkbox_div">
+            <div><input id="check_1_first" type="radio" name="radio" value="General Enquiry" required><br><label for="">General Enquiry</label>
+            </div>
+            <div><input id="check_1_second" type="radio" name="radio" value="SupportRequest" required><br><label for="">SupportRequest</label>
+            </div>
+          </div>
+          <p class="req_para">Please select a query type</p>
+        </div>
+
+        <div class="section">
+          <div class="label_div">
+            <label for="">Message</label><span>*</span>
+          </div>
+          <input type="text" required id="message_inp">
+          <p class="req_para">This field is required</p>
+        </div>
+
+        <div class="footer_div">
+          <input type="checkbox" value="true" id="check_2" required>
+          <label for="check_2">I consent to being contacted by the team</label><span>*</span>
+          <p class="req_para">To submit this form, please consent to being contacted</p>
+        </div>
+        <button type="submit" onclick="getValues()">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

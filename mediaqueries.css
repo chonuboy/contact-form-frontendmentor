@@ -1,0 +1,11 @@
+@media screen and (max-width:600px) {
+    .checkbox_div{
+        flex-direction: column;
+    }
+    .checkbox_div div{
+        width: auto;
+    }
+    .name_div{
+        flex-direction: column;
+    }
+}
